@@ -1,0 +1,87 @@
+/**************/
+/* Logo image */
+/**************/
+
+/* primarjalna knjizevnost */
+#header h1 img{
+    /* size */
+    width: calc(669px / 2);
+    height: calc(200px / 2);
+    
+    /* position */
+    margin-left: -140px;
+}
+
+
+
+/**********/
+/* Navbar */
+/**********/
+
+#navbar{
+    /* position */
+    position: absolute;
+    top: 40px;
+    left: 350px;
+    
+    /* background */
+    background: none;
+    
+}
+
+/* Domov | O publikaciji | ... */
+#navbar a{
+    /* size */
+    height: 40px;
+    font-size: 22px;
+    line-height: 100px;
+    
+    /* borders */
+    border-right: none;
+    
+    /* font style */
+    font-weight: normal;
+    letter-spacing: -2px;
+    
+    /* paddings*/
+    padding-right: 20px;
+}
+
+#navbar a:hover{
+    color: #b690c1;
+    background:none;
+}
+
+
+
+/***************/
+/* Breadcrumbs */
+/***************/
+
+#breadcrumb{
+    
+    /* position */
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+#breadcrumb a{
+    
+    /* color */
+    color: #989898;
+}
+
+
+
+/********/
+/* Body */
+/********/
+
+#main h2{
+    margin-left:40px;
+}
+
+#content{
+    margin-left:40px;
+    border-top: 1.5px solid #182231;
+}
