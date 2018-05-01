@@ -68,19 +68,22 @@
 /***************/
 
 #breadcrumb{
-    
     /* position */
     margin-top: -20px;
     margin-left: 40px;
+    color: #989898;
 }
 
 #breadcrumb a{
-    
     /* color */
     color: #989898;
 }
 
-
+#breadcrumb a:hover{
+    /* color */
+    background: none;
+    color: #4c4c4c;
+}
 
 /********/
 /* Body */
@@ -106,4 +109,117 @@
 
 #additionalHomeContent p{
     margin-left:0px;
+}
+
+
+
+/***********/
+/* Sidebar */
+/***********/
+
+/* general */
+#sidebar DIV.block{
+    background: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-bottom:20px;
+}
+
+#rightSidebar{
+    width: 17%;
+    margin-right: 7%;
+}
+
+#sidebar DIV.block SPAN.blockTitle{
+    background: none;
+    border-bottom: solid 1.5px;
+    border-color: grey;
+    
+    text-indent: 1px;
+    height: 16px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* languages */
+#sidebarLanguageToggle{
+    position: absolute;
+    top: 3%;
+    left: 76%;
+}
+
+#sidebarLanguageToggle img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* font style */
+#sidebarFontSize{
+    margin-bottom: 4px;
+    position: absolute;
+    top: 10%;
+}
+
+#sidebarFontSize span{
+    display: none;
+    color:red;
+}
+
+/* all input fields */
+.textField{
+    margin-left: 10px;
+    border-radius: 3px;
+    height: 18px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* buttons */
+.button{
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    border-color: gray;
+}
+
+#sidebarUser table{
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+}
+
+#sidebarUser .button{
+    float:right;
+}
+
+#sidebarUser td[colspan="2"] > *{
+    /*float: right;*/
+}
+
+/* notification */
+#notification ul{
+    list-style-type: none;
+    margin-left:-20px;
+}
+
+#notification ul li{
+    margin-bottom:4px;
+}
+
+#notification a:link{
+    text-decoration:none;
+    color: grey;
+    font-weight: bold;
+}
+
+#notification a:hover{
+    color: black;
+    background: none;
+}
+
+/* Open Journal System */
+#sidebarDevelopedBy a, #sidebarHelp a{
+    text-decoration:none;
+    color: grey;
+    font-weight: bold;
 }
