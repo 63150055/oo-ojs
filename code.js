@@ -25,4 +25,27 @@ window.onload = function(){
             img.src = slo
         }
     }
+    
+    /* insert header */
+    var header = document.createElement('div');
+    header.setAttribute("id", "my-header");
+    
+    var napis = document.createElement('img');
+    napis.src = "https://image.ibb.co/f5DKdn/logo.png";
+    napis.setAttribute("id", "my-napis");
+    
+    var logo = document.createElement('img');
+    logo.src = "https://image.ibb.co/g6Bi4S/napis.png"
+    logo.setAttribute("id", "my-logo");
+    
+    header.appendChild(logo)
+    header.appendChild(napis)
+    
+    var cont = document.getElementById("container")
+    cont.insertBefore(header, cont.firstChild);
+    
+    /* change order of sidebar and body */
+    var body = document.getElementById("body")
+    console.log(body.childNodes)
+    body.insertBefore(body.childNodes[3], body.childNodes[1]);
 }
