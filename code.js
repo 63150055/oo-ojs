@@ -34,11 +34,6 @@ window.onload = function(){
     napis.src = "https://image.ibb.co/f5DKdn/logo.png";
     napis.setAttribute("id", "my-napis");
     
-    var logo = document.createElement('img');
-    logo.src = "https://image.ibb.co/g6Bi4S/napis.png"
-    logo.setAttribute("id", "my-logo");
-    
-    header.appendChild(logo)
     header.appendChild(napis)
     
     var cont = document.getElementById("container")
@@ -46,6 +41,40 @@ window.onload = function(){
     
     /* change order of sidebar and body */
     var body = document.getElementById("body")
-    console.log(body.childNodes)
     body.insertBefore(body.childNodes[3], body.childNodes[1]);
+    
+    
+    /* Scroll position for navbar */
+    var height = document.documentElement.scrollHeight
+    var changePos = 0
+    var changeNeg = height
+    window.addEventListener("scroll", function (event) {
+        var scroll = this.scrollY;
+        var tmp1 = scroll - changePos;
+        var tmp2 = changeNeg - scroll;
+        console.log("tmp1",tmp1)
+        console.log("tmp2",tmp2)
+        
+        if(tmp1 > 150){
+            var cont = document.getElementById("my-napis");
+            cont.style.width = "15%";
+            cont.style.paddingBottom  = "45px";
+            
+            var cont = document.getElementById("my-header");
+            cont.style.padding  = "10px 10px 0px 10px";
+            
+            for(var i = 0; i < elements.length; i++){
+		        var img = elements[i];
+		        
+		        img.className = "languageSmall";
+		    }
+		    
+		    languages.className = "languageSmallWrapper";
+        
+        	var navbar = document.getElementById("navbar");
+        	navbar.className = "smaller";
+        	
+        	document.getElementById("breadcrumb").style.marginTop = "-40px"
+        }
+    });
 }
