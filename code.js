@@ -75,6 +75,32 @@ window.onload = function(){
         	navbar.className = "smaller";
         	
         	document.getElementById("breadcrumb").style.marginTop = "-40px"
+        	
+        	document.getElementById("sidebarDevelopedBy").getElementsByTagName("a")[0].style.top = "8%";
+        	document.getElementById("sidebarHelp").getElementsByTagName("a")[0].style.top = "8%";
+        } else {
+            var cont = document.getElementById("my-napis");
+            cont.style.width = "30%";
+            cont.style.paddingBottom  = "0px";
+            
+            var cont = document.getElementById("my-header");
+            cont.style.padding  = "10px 10px 90px 10px";
+            
+            for(var i = 0; i < elements.length; i++){
+		        var img = elements[i];
+		        
+		        img.className = "";
+		    }
+		    
+		    languages.className = "block";
+        
+        	var navbar = document.getElementById("navbar");
+        	navbar.className = "";
+        	
+        	document.getElementById("breadcrumb").style.marginTop = "60px"
+        	
+        	document.getElementById("sidebarDevelopedBy").getElementsByTagName("a")[0].style.top = "22%";
+        	document.getElementById("sidebarHelp").getElementsByTagName("a")[0].style.top = "22%";
         }
     });
 }
