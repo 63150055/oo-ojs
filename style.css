@@ -1,3 +1,11 @@
+html * {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+#content > div {
+    width: 100% !important;
+}
+
 
 #container{
     margin-bottom:0px;
@@ -78,6 +86,7 @@
     transform: translate(-25%,0%);
 }
 
+
 /* Domov | O publikaciji | ... */
 #navbar a{
     /* size */
@@ -145,9 +154,6 @@
     margin-right: 53px;
 }
 
-#content > div{
-    margin-bottom: 200px;
-}
 
 #journalDescription p{
     margin-left: 0px;
@@ -285,10 +291,11 @@
 /* buttons */
 .button{
     padding: 5px 10px 5px 10px;
-    border-radius: 3px;
-    border-color: gray;
+    border-radius: 3px !important;
+    border-color: black !important;
     background-color: white !important;
     float: right;
+    color: black !important;
 }
 
 .button:hover {
@@ -345,6 +352,11 @@
     z-index: 10000;
 }
 
+div.separator {
+    border-bottom: 1.5px solid #18223133 !important;
+    
+}
+
 
 /* ###################################################### */
 /* ------------------------------------------------------ */
@@ -381,7 +393,28 @@
     visibility: hidden;
 }
 
+/*O PUBLIKACIJI */
+#content h3 {
+    color: black !important;
+}
 
+#content a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#content a:visited {
+    color:black;
+}
+
+#content a:hover {
+    color:gray;
+    background-color: transparent;
+}
+
+.value .textField {
+    height: 22px !important;
+}
 
 /* LOGIN */
 #content > form{

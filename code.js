@@ -45,11 +45,11 @@ window.onload = function(){
 
     /* change order of sidebar elements */
     var rightSidebar = document.getElementById("rightSidebar");
-    console.log(rightSidebar.childNodes);
 	swapElements(rightSidebar.childNodes[10], rightSidebar.childNodes[8]);
 	swapElements(rightSidebar.childNodes[19], rightSidebar.childNodes[16]);
 	
 	wrap([rightSidebar.childNodes[10], rightSidebar.childNodes[16], rightSidebar.childNodes[19]]);
+	
     
     /* Scroll position for navbar */
     var height = document.documentElement.scrollHeight
