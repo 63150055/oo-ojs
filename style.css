@@ -1,423 +1,478 @@
-html * {
-    font-family: "Times New Roman", Times, serif !important;
-}
-
-#content > div {
-    width: 100% !important;
-}
-
-
-#container{
-    margin-bottom:0px;
-}
-
-#my-header{
-    padding: 10px;
-    background-color: #ffffff;
-    margin-left: 10px;
-    margin-right: -10px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000 !important;
-    padding-bottom: 90px;
-}
-
-#my-napis{
-    margin-left: 20px;
-    width: 30%;
-}
-
-/****************/
-/* Outer border */
-/****************/
-
-#container{
-    border: none;
-    box-shadow: none;
-}
-
-/**************/
-/* Logo image */
-/**************/
-
-/* primarjalna knjizevnost */
-#header h1 img{
-    /* just hide kz ugly */
-    visibility:hidden;
-    
-    /* size */
-    width: calc(669px / 2);
-    height: calc(200px / 2);
-    
-    /* position */
-    margin-left: -140px;
-}
-
-
-
-/**********/
-/* Navbar */
-/**********/
-
-#navbar{
-    width: 100%;
-    text-align: center;
-    border-bottom: solid 1.15px #b690c1;
-    background-color: white;
-    z-index: 1001 !important;
-    position: fixed;
-    top: 17%;
-    margin-left: -20px;
-    
-    -webkit-transition:top 100ms ease-in-out;
-    -moz-transition:top 100ms ease-in-out;
-    -o-transition:top 100ms ease-in-out;
-    transition:top 100ms ease-in-out;
-}
-
-.smaller{
-    top: 3% !important;
-    background-color: transparent !important;
-}
-
-#navbar ul{
-    left: 50%;
-    position: relative;
-    transform: translate(-25%,0%);
-}
-
-
-/* Domov | O publikaciji | ... */
-#navbar a{
-    /* size */
-    height: 30px;
-    font-size: 22px;
-    
-    /* borders */
-    border-right: none;
-    
-    /* font style */
-    font-weight: normal;
-    letter-spacing: -1.8px;
-    
-    /* paddings*/
-    padding-right: 20px;
-}
-
-#navbar a:hover{
-    color: #b690c1;
-    background:none;
-}
-
-
-
-/***************/
-/* Breadcrumbs */
-/***************/
-
-#breadcrumb{
-    /* position */
-    margin-top: 60px;
-    margin-left: 40px;
-    color: #989898;
-}
-
-#breadcrumb a{
-    /* color */
-    color: #989898;
-}
-
-#breadcrumb a:hover{
-    /* color */
-    background: none;
-    color: #4c4c4c;
-}
-
-/********/
-/* Body */
-/********/
-
-#main{
-    min-width: none;
-    width: 71%;
-    float:none;
-}
-
-#main h2{
-    margin-left:40px;
-}
-
-#content{
-    margin-left:40px;
-    border-top: 1.5px solid #18223133;
-    margin-bottom:50px;
-    margin-right: 53px;
-}
-
-
-#journalDescription p{
-    margin-left: 0px;
-}
-
-#additionalHomeContent p{
-    margin-left:0px;
-}
-
-
-
-/***********/
-/* Sidebar */
-/***********/
-
-/* general */
-#sidebar DIV.block{
-    background: none;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    margin-bottom:20px;
-    margin-right:100px;
-    
-}
-
-#sidebar DIV.wrappedBlock{
-    background: none;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    margin-bottom:20px;
-    margin-right:100px;
-    
-}
-
-#sidebar a:link{
-    color:black;
-    text-decoration:none;
-}
-
-#sidebar a:visited{
-    color:black;
-}
-
-#sidebar a:hover{
-    background-color: inherit;
-    color: gray;
-}
-
-#rightSidebar{
-    width: 103%;
-    margin-left:-20px;
-    float:none;
-    background-color:#eadbeb;
-    color:black;
-    display: -webkit-inline-box;
-    margin-right:0px;
-    padding-bottom:100px;
-}
-
-#sidebar DIV.block SPAN.blockTitle{
-    background: none;
-    border-bottom: none;
-    color:black;
-    text-indent: 1px;
-    height: 16px;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-/* languages */
-#sidebarLanguageToggle{
-    position: fixed;
-    top: 0%;
-    left: 76%;
-    z-index: 10001 !important;
-}
-
-#sidebarLanguageToggle img{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    
-    -webkit-transition:width 100ms ease-in-out;
-    -moz-transition:width 100ms ease-in-out;
-    -o-transition:width 100ms ease-in-out;
-    transition:width 100ms ease-in-out;
-}
-
-.languageSmall{
-    width:20px !important;
-}
-
-.languageSmallWrapper{
-    right: 3% !important;
-    left: unset !important;
-}
-
-/* vsebina publikacije */
-#sidebarNavigation label input {
-    margin: 0px 0px 5px 0px;
-}
-
-#sidebarNavigation label select {
-    margin: 0px 0px 5px 0px;
-    width: 100%;
-    border-radius: 3px;
-    height: 23px;
-}
-
-
-/* font style */
-#sidebarFontSize{
-    margin-bottom: 4px;
-
-    top: 10%;
-    visibility:visible;
-}
-
-#sidebarFontSize span{
-    display: inline;
-    color:red;
-}
-
-/* all input fields */
-.textField{
-    margin-left: 10px;
-    border-radius: 3px;
-    height: 18px;
-    padding-left:5px;
-    padding-right:5px;
-}
-
-/* buttons */
-.button{
-    padding: 5px 10px 5px 10px;
-    border-radius: 3px !important;
-    border-color: black !important;
-    background-color: white !important;
-    float: right;
-    color: black !important;
-}
-
-.button:hover {
-    background-color: gray !important;
-}
-
-#sidebarUser table{
-    border-collapse: separate;
-    border-spacing: 0px 5px;
-}
-
-#sidebarUser .button{
-    float:right;
-}
-
-#sidebarUser td[colspan="2"] > *{
-    /*float: right;*/
-}
-
-/* notification */
-#notification ul li{
-    margin-bottom:4px;
-}
-
-#sidebarDevelopedBy {
-    margin-right: 0 !important;
-    margin-left: 28% !important;
-}
-
-#sidebarHelp {
-    margin-right: 0 !important;
-}
-
-/* Open Journal System */
-#sidebarDevelopedBy a {
-    text-decoration:none;
-    color: gray !important;
-    font-weight: bold;
-    position: fixed;
-    left: 82%;
-    top:22%;
-    z-index: 10000;
-        padding: 0;
-    margin: 0;
-}
-
-#sidebarHelp a {
-    text-decoration:none;
-    color: gray !important;
-    font-weight: bold;
-    position: fixed;
-    left: 95%;
-    top:22%;
-    z-index: 10000;
-}
-
-div.separator {
-    border-bottom: 1.5px solid #18223133 !important;
-    
-}
-
-
-/* ###################################################### */
-/* ------------------------------------------------------ */
-/*                          ARHIVI                        */
-/* ------------------------------------------------------ */
-
-#issues h3{
-    color:gray;
-    font-size:2.5em;
-}
-
-#issues h4 a{
-    color:gray;
-    font-size:1em;
-    text-decoration: none;
-    font-weight: normal;
-}
-
-#issues h4 a:hover{
-    background-color: transparent;
-    color: #4c4c4c;
-}
-
-#issues h4 a:hover{
-    background-color: transparent;
-    color: #4c4c4c;
-}
-
-.issueCoverImage img{
-    position: absolute;
-    top: 30%;
-    left: 45%;
-    width:25%;
-    visibility: hidden;
-}
-
-/*O PUBLIKACIJI */
-#content h3 {
-    color: black !important;
-}
-
-#content a:link {
-    color: black;
-    text-decoration: none;
-}
-
-#content a:visited {
-    color:black;
-}
-
-#content a:hover {
-    color:gray;
-    background-color: transparent;
-}
-
-.value .textField {
-    height: 22px !important;
-}
-
-/* LOGIN */
-#content > form{
-    margin-top: 30px;
-    padding-left: 0px;
-}
+	#content div table{
+		background-color: white !important;
+	}
+	
+	table.listing td.headseparator, table.listing td.endseparator {
+		border-top: 1px groove !important;
+	}
+	
+	#content a:visited{
+		color: #bda8bd !important;
+	}
+
+	#content a:link {
+		color: gray !important;
+	}
+	
+	h4, #aboutPeople ul li a, #aboutPolicies ul li a, #aboutSubmissions ul li a, #aboutOther ul li a{
+		font-size: 1.3em !important;
+	}
+
+	#content h3 {
+		color: #00000070 !important;
+		font-size: 2.1em !important;
+	}
+
+	#pageFooter{
+	margin-bottom:50px !important}
+
+	#developedBy, #sidebarHelp{
+		visibility: hidden;
+	}
+	html * {
+		font-family: Verdana, Geneva, sans-serif !important;
+	}
+
+	#content > div {
+		width: 100% !important;
+	}
+
+
+	#container{
+		margin-bottom:0px;
+	}
+
+	#my-header{
+		padding: 10px;
+		background-color: #ffffff;
+		margin-left: 10px;
+		margin-right: -10px;
+		position: fixed;
+		width: 100%;
+		z-index: 1000 !important;
+		padding-bottom: 90px;
+	}
+
+	#my-napis{
+		margin-left: 20px;
+		width: 30%;
+		filter: brightness(90%);
+	}
+
+	/****************/
+	/* Outer border */
+	/****************/
+
+	#container{
+		border: none;
+		box-shadow: none;
+	}
+
+	/**************/
+	/* Logo image */
+	/**************/
+
+	/* primarjalna knjizevnost */
+	#header h1 img{
+		/* just hide kz ugly */
+		visibility:hidden;
+		
+		/* size */
+		width: calc(669px / 2);
+		height: calc(200px / 2);
+		
+		/* position */
+		margin-left: -140px;
+	}
+
+
+
+	/**********/
+	/* Navbar */
+	/**********/
+
+	#navbar{
+		width: 100%;
+		text-align: center;
+		border-bottom: solid 1.15px #b690c1;
+		background-color: white;
+		z-index: 1001 !important;
+		position: fixed;
+		top: 17%;
+		margin-left: -20px;
+		
+		-webkit-transition:top 100ms ease-in-out;
+		-moz-transition:top 100ms ease-in-out;
+		-o-transition:top 100ms ease-in-out;
+		transition:top 100ms ease-in-out;
+	}
+
+	.smaller{
+		top: 3% !important;
+		background-color: transparent !important;
+	}
+
+	#navbar ul{
+		left: 50%;
+		position: relative;
+		transform: translate(-25%,0%);
+	}
+
+
+	/* Domov | O publikaciji | ... */
+	#navbar a{
+		/* size */
+		height: 30px;
+		font-size: 22px;
+		
+		/* borders */
+		border-right: none;
+		
+		/* font style */
+		font-weight: normal;
+		letter-spacing: -0.5px;
+		
+		/* paddings*/
+		padding-right: 20px;
+	}
+
+	#navbar a:hover{
+		color: #b690c1;
+		background:none;
+	}
+
+
+
+	/***************/
+	/* Breadcrumbs */
+	/***************/
+
+	#breadcrumb{
+		/* position */
+		margin-top: 60px;
+		margin-left: 40px;
+		color: #989898;
+	}
+
+	#breadcrumb a{
+		/* color */
+		color: #989898;
+	}
+
+	#breadcrumb a:hover{
+		/* color */
+		background: none;
+		color: #4c4c4c;
+	}
+
+	/********/
+	/* Body */
+	/********/
+
+	#main{
+		min-width: none;
+		width: 71%;
+		float:none;
+	}
+
+	#main h2{
+		margin-left:40px;
+		color: #182231cf !important;
+	}
+
+	#content{
+		margin-left:40px;
+		border-top: 1.5px solid #18223133;
+		#margin-bottom:50px;
+		margin-right: 53px;
+	}
+
+
+	#journalDescription p{
+		margin-left: 0px;
+	}
+
+	#additionalHomeContent p{
+		margin-left:0px;
+	}
+
+
+
+	/***********/
+	/* Sidebar */
+	/***********/
+
+	/* general */
+	#sidebar DIV.block{
+		background: none;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		margin-bottom:20px;
+		margin-right:100px;
+		
+	}
+
+	#sidebar DIV.wrappedBlock{
+		background: none;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		margin-bottom:20px;
+		margin-right:100px;
+		
+	}
+
+	#sidebar a:link{
+		color:black;
+		text-decoration:none;
+	}
+
+	#sidebar a:visited{
+		color:black;
+	}
+
+	#sidebar a:hover{
+		background-color: inherit;
+		color: gray;
+	}
+
+	#rightSidebar{
+		color: ##3e3535 !important;
+	}
+	
+	#rightSidebar input, #rightSidebar select{
+		border: 1px solid #3333332b !important;
+	}
+	
+	#rightSidebar span{
+		color: #757272 !important;
+	}
+	
+	#rightSidebar{
+		width: 103%;
+		margin-left:-20px;
+		float:none;
+		background-color:#eadbeb;
+		color:black;
+		display: -webkit-inline-box;
+		margin-right:0px;
+		padding-bottom:100px;
+		padding-top: 4%;
+	}
+	
+	
+
+	#sidebar DIV.block SPAN.blockTitle{
+		background: none;
+		border-bottom: none;
+		color:black;
+		text-indent: 1px;
+		height: 16px;
+		font-size: 13px;
+		margin-bottom: 10px;
+	}
+
+	/* languages */
+	#sidebarLanguageToggle{
+		position: fixed;
+		top: 1%;
+		padding-top: 0%;
+		left: 81%;
+		z-index: 10001 !important;
+		margin-right: 0px !important;
+	}
+
+	#sidebarLanguageToggle img{
+		width: 30px;
+		margin-right: 10px;
+		
+		-webkit-transition:width 100ms ease-in-out;
+		-moz-transition:width 100ms ease-in-out;
+		-o-transition:width 100ms ease-in-out;
+		transition:width 100ms ease-in-out;
+	}
+
+	.languageSmall{
+		width:30px !important;
+	}
+
+	.languageSmallWrapper{
+		right: 3% !important;
+		left: unset !important;
+		visibility: hidden;
+	}
+
+	/* vsebina publikacije */
+	#sidebarNavigation{
+		margin-left: 6% !important;
+		margin-right: 230px !important;
+	}
+
+	#sidebarNavigation label input {
+		margin: 0px 0px 5px 0px;
+	}
+
+	#sidebarNavigation label select {
+		margin: 0px 0px 5px 0px;
+		width: 100%;
+		border-radius: 3px;
+		height: 23px;
+	}
+
+
+	/* font style */
+	#sidebarFontSize{
+		margin-bottom: 4px;
+
+		top: 10%;
+		visibility:visible;
+	}
+
+	#sidebarFontSize span{
+		display: inline;
+		color:red;
+	}
+
+	/* all input fields */
+	.textField{
+		margin-left: 10px;
+		border-radius: 3px;
+		height: 18px;
+		padding-left:5px;
+		padding-right:5px;
+	}
+
+	/* buttons */
+	.button{
+		padding: 5px 10px 5px 10px;
+		border-radius: 3px !important;
+		border-color: black !important;
+		background-color: white !important;
+		float: right;
+		color: black !important;
+	}
+
+	.button:hover{
+	background-color: #80808085 !important;
+	}
+
+	#sidebarUser.block{
+		margin-left: -12% !important;
+	}
+
+	#sidebarUser table{
+		border-collapse: separate;
+		border-spacing: 0px 5px;
+	}
+
+	#sidebarUser .button{
+		float:right;
+	}
+
+	#sidebarUser td[colspan="2"] > *{
+		/*float: right;*/
+	}
+
+	/* notification */
+	#notification ul li{
+		margin-bottom:4px;
+	}
+
+	#sidebarDevelopedBy {
+		margin-right: 0 !important;
+		margin-left: 28% !important;
+	}
+
+	#sidebarHelp {
+		margin-right: 0 !important;
+	}
+
+	/* Open Journal System */
+	#sidebarDevelopedBy a {
+		text-decoration:none;
+		color: gray !important;
+		font-weight: bold;
+		position: fixed;
+		left: 82%;
+		top:22%;
+		z-index: 10000;
+			padding: 0;
+		margin: 0;
+	}
+
+	#sidebarHelp a {
+		text-decoration:none;
+		color: gray !important;
+		font-weight: bold;
+		position: fixed;
+		left: 95%;
+		top:22%;
+		z-index: 10000;
+	}
+
+	div.separator {
+		border-bottom: 1.5px solid #18223133 !important;
+		
+	}
+
+
+	/* ###################################################### */
+	/* ------------------------------------------------------ */
+	/*                          ARHIVI                        */
+	/* ------------------------------------------------------ */
+
+	#issues h3{
+		color:gray;
+		font-size:2.5em;
+	}
+
+	#issues h4 a{
+		color:gray;
+		font-size:1em;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+	#issues h4 a:hover{
+		background-color: transparent;
+		color: #4c4c4c;
+	}
+
+	#issues h4 a:hover{
+		background-color: transparent;
+		color: #4c4c4c;
+	}
+
+	.issueCoverImage img{
+		position: absolute;
+		top: 30%;
+		left: 45%;
+		width:25%;
+		visibility: hidden;
+	}
+
+	/*O PUBLIKACIJI */
+	#content a:link {
+		color: black;
+		text-decoration: none;
+	}
+
+	#content a:visited {
+		color:black;
+	}
+
+	#content a:hover {
+		color:gray;
+		background-color: transparent;
+	}
+
+	.value .textField {
+		height: 22px !important;
+	}
+
+	/* LOGIN */
+	#content > form{
+		margin-top: 30px;
+		padding-left: 0px;
+	}

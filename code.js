@@ -1,18 +1,17 @@
 window.onload = function(){
-
+	
     /* set new icons for languages */
-    var eng = "https://image.flaticon.com/icons/svg/197/197484.svg";
-    var slo = "https://image.flaticon.com/icons/svg/197/197633.svg";
-    var deu = "https://image.flaticon.com/icons/svg/197/197571.svg";
-    var hrv = "https://image.flaticon.com/icons/svg/197/197503.svg";
-    var ser = "https://image.flaticon.com/icons/svg/197/197602.svg";
+    var eng = "https://image.ibb.co/hz8Qvy/eng.png";
+    var slo = "https://image.ibb.co/nFkzNd/slo.png";
+    var deu = "https://image.ibb.co/cbwH8J/deu.png";
+    var hrv = "https://image.ibb.co/mLCqTJ/cro.png";
+    var ser = "https://image.ibb.co/j6AATJ/srb.png";
     
     var languages = document.getElementById("sidebarLanguageToggle");
     var elements = languages.getElementsByTagName("img");
     
     for(var i = 0; i < elements.length; i++){
         var img = elements[i];
-        
         if(img.alt == "English"){
             img.src = eng;    
         }else if(img.alt == "Deutsch"){
@@ -25,6 +24,9 @@ window.onload = function(){
             img.src = slo
         }
     }
+    
+    /* Trenutna st. bg color */
+    
     
     /* insert header */
     var header = document.createElement('div');
@@ -62,10 +64,12 @@ window.onload = function(){
         console.log("tmp1",tmp1)
         console.log("tmp2",tmp2)
         
-        if(tmp1 > 150){
+        if(tmp1 > 70){
             var cont = document.getElementById("my-napis");
-            cont.style.width = "15%";
-            cont.style.paddingBottom  = "45px";
+            cont.style.width = "3.5%";
+            cont.style.paddingBottom  = "13px";
+            cont.style.paddingLeft  = "45px";
+            cont.src="https://image.ibb.co/g6Bi4S/napis.png"
             
             var cont = document.getElementById("my-header");
             cont.style.padding  = "10px 10px 0px 10px";
@@ -82,13 +86,12 @@ window.onload = function(){
         	navbar.className = "smaller";
         	
         	document.getElementById("breadcrumb").style.marginTop = "-40px"
-        	
-        	document.getElementById("sidebarDevelopedBy").getElementsByTagName("a")[0].style.top = "8%";
-        	document.getElementById("sidebarHelp").getElementsByTagName("a")[0].style.top = "8%";
-        } else {
+        } else if(tmp1 < 30) {
             var cont = document.getElementById("my-napis");
             cont.style.width = "30%";
             cont.style.paddingBottom  = "0px";
+            cont.style.paddingLeft  = "0px";
+            cont.src="https://image.ibb.co/f5DKdn/logo.png"
             
             var cont = document.getElementById("my-header");
             cont.style.padding  = "10px 10px 90px 10px";
@@ -105,9 +108,6 @@ window.onload = function(){
         	navbar.className = "";
         	
         	document.getElementById("breadcrumb").style.marginTop = "60px"
-        	
-        	document.getElementById("sidebarDevelopedBy").getElementsByTagName("a")[0].style.top = "22%";
-        	document.getElementById("sidebarHelp").getElementsByTagName("a")[0].style.top = "22%";
         }
     });
 }
