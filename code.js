@@ -25,9 +25,6 @@ window.onload = function(){
         }
     }
     
-    /* Trenutna st. bg color */
-    
-    
     /* insert header */
     var header = document.createElement('div');
     header.setAttribute("id", "my-header");
@@ -72,7 +69,7 @@ window.onload = function(){
             cont.src="https://image.ibb.co/g6Bi4S/napis.png"
             
             var cont = document.getElementById("my-header");
-            cont.style.padding  = "10px 10px 0px 10px";
+            cont.style.padding  = "10px 10px 5px 10px";
             
             for(var i = 0; i < elements.length; i++){
 		        var img = elements[i];

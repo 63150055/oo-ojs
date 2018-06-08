@@ -1,4 +1,36 @@
-	#content div table{
+#main> h3{
+    padding-left: 42px;
+    color: #8f8f8f;
+}
+#content{
+    font-size:0.7em
+}
+#sidebarUser input[type=submit]{
+    position: relative;
+    top: -20px;
+}
+#sidebarUser input[type=checkbox]{
+    position: relative;
+    top: 10px;
+}
+#sidebarUser label[for=remember]{
+    position: relative;
+    top: 7px;
+}
+#simpleSearchForm input[type=text],#simpleSearchForm select{
+    width: 157px;
+    margin-top: 3px !important;
+}	
+#simpleSearchForm, #sidebarUser form{
+    padding:0px
+}
+.wrappedBlock ul{
+    padding: 0 0 0 1.57em;
+}
+.sidebarNavigation #blockSubtitle{
+    padding: 0px;
+}
+#content div table{
 		background-color: white !important;
 	}
 	
