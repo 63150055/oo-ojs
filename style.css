@@ -76,13 +76,13 @@
 
 	#my-header{
 		padding: 10px;
-		background-color: #ffffff;
 		margin-left: 10px;
 		margin-right: -10px;
 		position: fixed;
 		width: 100%;
 		z-index: 1000 !important;
 		padding-bottom: 90px;
+		height: 9.7% !importatnt;
 	}
 
 	#my-napis{
@@ -127,11 +127,12 @@
 		width: 100%;
 		text-align: center;
 		border-bottom: solid 1.15px #b690c1;
-		background-color: white;
-		z-index: 1001 !important;
+		z-index: 999 !important;
 		position: fixed;
-		top: 17%;
+		top: 0 !important;
+		padding-top: 8%;
 		margin-left: -20px;
+		background-color: white !important;
 		
 		-webkit-transition:top 100ms ease-in-out;
 		-moz-transition:top 100ms ease-in-out;
@@ -140,8 +141,7 @@
 	}
 
 	.smaller{
-		top: 3% !important;
-		background-color: transparent !important;
+		padding-top: 1.7% !important;
 	}
 
 	#navbar ul{

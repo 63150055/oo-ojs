@@ -68,8 +68,9 @@ window.onload = function(){
             cont.style.paddingLeft  = "45px";
             cont.src="https://image.ibb.co/g6Bi4S/napis.png"
             
-            var cont = document.getElementById("my-header");
-            cont.style.padding  = "10px 10px 5px 10px";
+            var cont = document.getElementById("navbar");
+            //cont.style.padding  = "0.7% 10px 0px 10px";
+            //cont.style.paddingTop = "1.7%";
             
             for(var i = 0; i < elements.length; i++){
 		        var img = elements[i];
@@ -90,8 +91,9 @@ window.onload = function(){
             cont.style.paddingLeft  = "0px";
             cont.src="https://image.ibb.co/f5DKdn/logo.png"
             
-            var cont = document.getElementById("my-header");
-            cont.style.padding  = "10px 10px 90px 10px";
+            var cont = document.getElementById("navbar");
+            //cont.style.padding  = "0.7% 10px 90px 10px";
+            cont.style.paddingTop = "8% !important";
             
             for(var i = 0; i < elements.length; i++){
 		        var img = elements[i];
