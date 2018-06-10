@@ -79,15 +79,15 @@
 		margin-left: 10px;
 		margin-right: -10px;
 		position: fixed;
-		width: 100%;
 		z-index: 1000 !important;
 		padding-bottom: 90px;
 		height: 9.7% !importatnt;
+        width:15%;
 	}
 
 	#my-napis{
 		margin-left: 20px;
-		width: 30%;
+		width: 210%;
 		filter: brightness(90%);
 	}
 

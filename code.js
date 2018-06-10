@@ -63,7 +63,7 @@ window.onload = function(){
         
         if(tmp1 > 70){
             var cont = document.getElementById("my-napis");
-            cont.style.width = "3.5%";
+            cont.style.width = "27%";
             cont.style.paddingBottom  = "13px";
             cont.style.paddingLeft  = "45px";
             cont.src="https://image.ibb.co/g6Bi4S/napis.png"
@@ -86,7 +86,7 @@ window.onload = function(){
         	document.getElementById("breadcrumb").style.marginTop = "-40px"
         } else if(tmp1 < 30) {
             var cont = document.getElementById("my-napis");
-            cont.style.width = "30%";
+            cont.style.width = "210%";
             cont.style.paddingBottom  = "0px";
             cont.style.paddingLeft  = "0px";
             cont.src="https://image.ibb.co/f5DKdn/logo.png"
