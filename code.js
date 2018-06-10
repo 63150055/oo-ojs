@@ -58,8 +58,8 @@ window.onload = function(){
         var scroll = this.scrollY;
         var tmp1 = scroll - changePos;
         var tmp2 = changeNeg - scroll;
-        console.log("tmp1",tmp1)
-        console.log("tmp2",tmp2)
+        //console.log("tmp1",tmp1)
+        //console.log("tmp2",tmp2)
         
         if(tmp1 > 70){
             var cont = document.getElementById("my-napis");
